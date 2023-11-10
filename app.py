@@ -10,6 +10,10 @@ if 'trial_counter' not in st.session_state:
 if 'percentage' not in st.session_state:
     st.session_state.percentage = 0
 
+st.set_page_config(
+    page_title="Speech Squad",
+    page_icon=":speech_balloon:",
+)
 
 # Function to log the trial data
 def log_trial(trial_number, student_name, objective, score):
